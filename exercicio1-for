@@ -1,0 +1,12 @@
+n_par = 0
+n_impar = 0
+
+for i in range(10):
+    n = int(input("Informe um número inteiro: "))
+    if n % 2 == 0:
+        n_par += 1
+    else:
+        n_impar += 1
+
+print(f"Quantidade de números pares: {n_par}")
+print(f"Quantidade de números ímpares: {n_impar}")

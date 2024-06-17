@@ -1,0 +1,16 @@
+vetor = []
+vetor.append("Luis")
+vetor.append("Renato")
+vetor.append("Pedro")
+print(vetor)
+print(vetor[0])
+
+vetor.append(input("Informe um nome: "))
+
+print(vetor)
+
+# "len" retorna o numero de elementos
+print(len(vetor))
+
+for nome in vetor:
+    print(nome)

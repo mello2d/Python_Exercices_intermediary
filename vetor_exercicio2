@@ -1,0 +1,15 @@
+pessoas = []
+
+while True:
+    nome = input("Digite o nome da pessoa: ")
+    idade = int(input("Digite a idade da pessoa: "))
+    pessoas.append((nome, idade))
+    
+    continuar = input("Deseja continuar cadastrando? (s/n): ")
+    if continuar.lower() != 's':
+        break
+
+print("\nPessoas menores de idade:")
+for nome, idade in pessoas:
+    if idade < 18:
+        print(f"{nome} - {idade} anos")

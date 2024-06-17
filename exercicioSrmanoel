@@ -1,0 +1,23 @@
+def caixa_registradora():
+    print("Lojas Tabajara\n")
+    total = 0
+    quantidade = 1
+    
+    while True:
+        preco = float(input(f"Produto {quantidade}: R$ "))
+        if preco == 0:
+            break
+        total += preco
+        quantidade += 1
+    
+    print(f"Total: R$ {total:.2f}")
+    
+    dinheiro = float(input("Dinheiro fornecido pelo cliente: R$ "))
+    
+    troco = dinheiro - total
+    
+    print(f"Troco: R$ {troco:.2f}\n")
+
+
+while True:
+    caixa_registradora()

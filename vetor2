@@ -1,0 +1,19 @@
+
+agenda = []
+
+while True:
+    pessoa = {}
+    pessoa["nome"] = input("Informe o nome: ")
+    pessoa["idade"] = int(input("Informe a idade: "))
+    pessoa["email"] = input("Informe o email: ")
+    pessoa["endereco"] = input("Informe o endereço: ")
+    pessoa["telefone"] = input("Informe o telefone: ")
+
+    agenda.append(pessoa)
+    r = input("Deseja continuar? (s/n)").lower()
+    if r == 'n':
+        break
+for contato in agenda:
+    print (contato["nome"])
+
+

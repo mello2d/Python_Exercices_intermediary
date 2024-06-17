@@ -1,0 +1,22 @@
+resp = ''
+totalSalario = 0
+totalFilhos = 0
+quantidade = 0
+
+while True:
+    salario = float(input("Informe salário: "))
+    filhos = int(input("Informe número de filhos: "))
+
+    totalSalario = totalSalario + salario
+    totalFilho = totalFilhos + filhos
+    quantidade += 1
+
+    resp = input("Deseja continuar? (s/n)").lower()
+    if resp == 'n':
+        break
+
+mediaSalario = totalSalario / quantidade
+mediaFilhos = totalFilho / quantidade
+print(f"{mediaSalario:.2f}")
+print(f"{mediaFilhos:.2f}")
+print("fim")

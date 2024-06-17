@@ -1,0 +1,19 @@
+n1 = int(input("Informe o primeiro número: "))
+n2 = int(input("Informe o segundo número: "))
+op = input("informe a operação: ")
+r = 0
+
+match op:
+    case "+":
+        r = n1 + n2
+    case "-":
+        r = n1 - n2
+    case "*" | "x" | "X" | ".":
+        r = n1 * n2
+    case "/":
+        if n2 != 0:
+            r = n1 /n2
+    case _:
+        print("Operador inválido")
+
+print(f"O resultado é {r}")
